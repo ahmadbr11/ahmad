@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدورات - MedLearn</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
+                <span class="logo-text">Med<span class="highlight">Learn</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../../index.html">الرئيسية</a></li>
+                <li><a href="courses.html" class="active">الدورات</a></li>
+                <li><a href="instructors.html">المحاضرون</a></li>
+                <li><a href="pricing.html">الاشتراكات</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="../en/courses.html" class="lang-switch">EN</a>
+                <a href="login.html" class="btn btn-outline">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>الدورات الطبية</h1>
+            <p>اكتشف مجموعة واسعة من الدورات الطبية المتخصصة</p>
+        </div>
+    </section>
+
+    <!-- Courses Content -->
+    <section class="courses-page">
+        <div class="container">
+            <div class="courses-layout">
+                <!-- Sidebar Filters -->
+                <aside class="courses-sidebar">
+                    <div class="filter-section">
+                        <h3>البحث</h3>
+                        <div class="search-box">
+                            <input type="text" placeholder="ابحث عن دورة...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>التخصصات</h3>
+                        <ul class="filter-list">
+                            <li><label><input type="checkbox" checked> الكل</label></li>
+                            <li><label><input type="checkbox"> أمراض القلب</label></li>
+                            <li><label><input type="checkbox"> الجراحة</label></li>
+                            <li><label><input type="checkbox"> طب الأطفال</label></li>
+                            <li><label><input type="checkbox"> طب الأسنان</label></li>
+                            <li><label><input type="checkbox"> الأمراض الجلدية</label></li>
+                            <li><label><input type="checkbox"> الأشعة</label></li>
+                            <li><label><input type="checkbox"> طب الطوارئ</label></li>
+                            <li><label><input type="checkbox"> طب الأعصاب</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>المستوى</h3>
+                        <ul class="filter-list">
+                            <li><label><input type="checkbox"> مبتدئ</label></li>
+                            <li><label><input type="checkbox"> متوسط</label></li>
+                            <li><label><input type="checkbox"> متقدم</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>السعر</h3>
+                        <ul class="filter-list">
+                            <li><label><input type="checkbox"> مجاني</label></li>
+                            <li><label><input type="checkbox"> مدفوع</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>التقييم</h3>
+                        <ul class="filter-list">
+                            <li><label><input type="checkbox"> <i class="fas fa-star"></i> 4.5 فما فوق</label></li>
+                            <li><label><input type="checkbox"> <i class="fas fa-star"></i> 4.0 فما فوق</label></li>
+                            <li><label><input type="checkbox"> <i class="fas fa-star"></i> 3.5 فما فوق</label></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Courses Grid -->
+                <div class="courses-main">
+                    <div class="courses-header">
+                        <p>عرض <strong>24</strong> دورة</p>
+                        <select class="sort-select">
+                            <option>الأحدث</option>
+                            <option>الأكثر مبيعاً</option>
+                            <option>الأعلى تقييماً</option>
+                            <option>السعر: من الأقل للأعلى</option>
+                            <option>السعر: من الأعلى للأقل</option>
+                        </select>
+                    </div>
+
+                    <div class="courses-grid">
+                        <!-- Course 1 -->
+                        <div class="course-card" data-category="cardiology">
+                            <div class="course-image">
+                                <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400" alt="Course">
+                                <span class="course-badge">الأكثر مبيعاً</span>
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-category">أمراض القلب</div>
+                                <h3>تخطيط القلب الكهربائي - من المبتدئ للمحترف</h3>
+                                <div class="course-instructor">
+                                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=50" alt="Instructor">
+                                    <span>د. أحمد محمود</span>
+                                </div>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 12 ساعة</span>
+                                    <span><i class="fas fa-play-circle"></i> 45 درس</span>
+                                    <span><i class="fas fa-signal"></i> متوسط</span>
+                                </div>
+                                <div class="course-footer">
+                                    <div class="course-price">
+                                        <span class="current-price">$35</span>
+                                        <span class="old-price">$65</span>
+                                    </div>
+                                    <div class="course-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.8</span>
+                                        <span class="rating-count">(128)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course 2 -->
+                        <div class="course-card" data-category="surgery">
+                            <div class="course-image">
+                                <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=400" alt="Course">
+                                <span class="course-badge new">جديد</span>
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-category">الجراحة</div>
+                                <h3>أساسيات الجراحة العامة والتقنيات الحديثة</h3>
+                                <div class="course-instructor">
+                                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=50" alt="Instructor">
+                                    <span>د. سارة أحمد</span>
+                                </div>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 20 ساعة</span>
+                                    <span><i class="fas fa-play-circle"></i> 60 درس</span>
+                                    <span><i class="fas fa-signal"></i> متقدم</span>
+                                </div>
+                                <div class="course-footer">
+                                    <div class="course-price">
+                                        <span class="current-price">$65</span>
+                                    </div>
+                                    <div class="course-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.9</span>
+                                        <span class="rating-count">(89)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course 3 -->
+                        <div class="course-card" data-category="pediatrics">
+                            <div class="course-image">
+                                <img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=400" alt="Course">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-category">طب الأطفال</div>
+                                <h3>طب الأطفال السريري - التشخيص والعلاج</h3>
+                                <div class="course-instructor">
+                                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=50" alt="Instructor">
+                                    <span>د. ليلى حسن</span>
+                                </div>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 15 ساعة</span>
+                                    <span><i class="fas fa-play-circle"></i> 52 درس</span>
+                                    <span><i class="fas fa-signal"></i> مبتدئ</span>
+                                </div>
+                                <div class="course-footer">
+                                    <div class="course-price">
+                                        <span class="current-price">$45</span>
+                                        <span class="old-price">$75</span>
+                                    </div>
+                                    <div class="course-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.7</span>
+                                        <span class="rating-count">(156)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course 4 -->
+                        <div class="course-card" data-category="emergency">
+                            <div class="course-image">
+                                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400" alt="Course">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-category">طب الطوارئ</div>
+                                <h3>الإنعاش القلبي الرئوي المتقدم ACLS</h3>
+                                <div class="course-instructor">
+                                    <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=50" alt="Instructor">
+                                    <span>د. محمد علي</span>
+                                </div>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 8 ساعات</span>
+                                    <span><i class="fas fa-play-circle"></i> 32 درس</span>
+                                    <span><i class="fas fa-signal"></i> متقدم</span>
+                                </div>
+                                <div class="course-footer">
+                                    <div class="course-price">
+                                        <span class="current-price">$55</span>
+                                    </div>
+                                    <div class="course-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.9</span>
+                                        <span class="rating-count">(203)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course 5 -->
+                        <div class="course-card" data-category="radiology">
+                            <div class="course-image">
+                                <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=400" alt="Course">
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-category">الأشعة</div>
+                                <h3>قراءة الأشعة السينية للصدر</h3>
+                                <div class="course-instructor">
+                                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=50" alt="Instructor">
+                                    <span>د. نور الدين</span>
+                                </div>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 10 ساعات</span>
+                                    <span><i class="fas fa-play-circle"></i> 40 درس</span>
+                                    <span><i class="fas fa-signal"></i> متوسط</span>
+                                </div>
+                                <div class="course-footer">
+                                    <div class="course-price">
+                                        <span class="current-price">$40</span>
+                                    </div>
+                                    <div class="course-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.6</span>
+                                        <span class="rating-count">(98)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course 6 -->
+                        <div class="course-card" data-category="dermatology">
+                            <div class="course-image">
+                                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400" alt="Course">
+                                <span class="course-badge">خصم 40%</span>
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-category">الأمراض الجلدية</div>
+                                <h3>تشخيص الأمراض الجلدية الشائعة</h3>
+                                <div class="course-instructor">
+                                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=50" alt="Instructor">
+                                    <span>د. رنا خالد</span>
+                                </div>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 14 ساعة</span>
+                                    <span><i class="fas fa-play-circle"></i> 48 درس</span>
+                                    <span><i class="fas fa-signal"></i> مبتدئ</span>
+                                </div>
+                                <div class="course-footer">
+                                    <div class="course-price">
+                                        <span class="current-price">$30</span>
+                                        <span class="old-price">$50</span>
+                                    </div>
+                                    <div class="course-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.5</span>
+                                        <span class="rating-count">(76)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">4</button>
+                        <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../../index.html" class="logo">
+                        <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
+                        <span class="logo-text">Med<span class="highlight">Learn</span></span>
+                    </a>
+                    <p>منصة تعليمية طبية متكاملة للأطباء والمختصين</p>
+                    <p class="tagline">تعلم. تطور. تميز.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="courses.html">الدورات</a></li>
+                        <li><a href="instructors.html">المحاضرون</a></li>
+                        <li><a href="pricing.html">الاشتراكات</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>الدعم</h4>
+                    <ul>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                        <li><a href="terms.html">الشروط والأحكام</a></li>
+                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>تواصل معنا</h4>
+                    <p><i class="fas fa-envelope"></i> info@medlearn.com</p>
+                    <p><i class="fas fa-phone"></i> +970 599 123 456</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedLearn. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

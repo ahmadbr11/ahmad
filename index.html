@@ -3,23 +3,456 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أحمد - موقعي الشخصي</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MedLearn - تعلم. تطور. تميز.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>أحمد</h1>
-        <p>مرحباً بك في موقعي الشخصي</p>
-    </header>
-    <main>
-        <section>
-            <h2>من أنا</h2>
-            <p>مطور ومهتم بالتقنية</p>
-        </section>
-        <section>
-            <h2>تواصل معي</h2>
-            <p>GitHub: <a href="https://github.com/ahmadbr11">ahmadbr11</a></p>
-        </section>
-    </main>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
+                <span class="logo-text">Med<span class="highlight">Learn</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="pages/ar/courses.html">الدورات</a></li>
+                <li><a href="pages/ar/instructors.html">المحاضرون</a></li>
+                <li><a href="pages/ar/pricing.html">الاشتراكات</a></li>
+                <li><a href="pages/ar/about.html">من نحن</a></li>
+                <li><a href="pages/ar/contact.html">تواصل معنا</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="pages/en/index.html" class="lang-switch">EN</a>
+                <a href="pages/ar/login.html" class="btn btn-outline">تسجيل الدخول</a>
+                <a href="pages/ar/register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>طوّر مسيرتك الطبية<br><span class="highlight">مع أفضل الخبراء</span></h1>
+                <p>منصة تعليمية طبية متكاملة تقدم دورات احترافية للأطباء والمختصين في فلسطين والأردن</p>
+                <div class="hero-search">
+                    <input type="text" placeholder="ابحث عن دورة طبية...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">طبيب مسجل</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">دورة متخصصة</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">محاضر خبير</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600" alt="Medical Education">
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="specialties">
+        <div class="container">
+            <div class="section-header">
+                <h2>التخصصات الطبية</h2>
+                <p>اختر تخصصك وابدأ رحلة التعلم</p>
+            </div>
+            <div class="specialties-grid">
+                <a href="pages/ar/courses.html?cat=cardiology" class="specialty-card">
+                    <div class="specialty-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>أمراض القلب</h3>
+                    <span>12 دورة</span>
+                </a>
+                <a href="pages/ar/courses.html?cat=surgery" class="specialty-card">
+                    <div class="specialty-icon"><i class="fas fa-procedures"></i></div>
+                    <h3>الجراحة</h3>
+                    <span>8 دورات</span>
+                </a>
+                <a href="pages/ar/courses.html?cat=pediatrics" class="specialty-card">
+                    <div class="specialty-icon"><i class="fas fa-baby"></i></div>
+                    <h3>طب الأطفال</h3>
+                    <span>10 دورات</span>
+                </a>
+                <a href="pages/ar/courses.html?cat=dentistry" class="specialty-card">
+                    <div class="specialty-icon"><i class="fas fa-tooth"></i></div>
+                    <h3>طب الأسنان</h3>
+                    <span>6 دورات</span>
+                </a>
+                <a href="pages/ar/courses.html?cat=dermatology" class="specialty-card">
+                    <div class="specialty-icon"><i class="fas fa-allergies"></i></div>
+                    <h3>الأمراض الجلدية</h3>
+                    <span>5 دورات</span>
+                </a>
+                <a href="pages/ar/courses.html?cat=radiology" class="specialty-card">
+                    <div class="specialty-icon"><i class="fas fa-x-ray"></i></div>
+                    <h3>الأشعة</h3>
+                    <span>7 دورات</span>
+                </a>
+                <a href="pages/ar/courses.html?cat=emergency" class="specialty-card">
+                    <div class="specialty-icon"><i class="fas fa-ambulance"></i></div>
+                    <h3>طب الطوارئ</h3>
+                    <span>9 دورات</span>
+                </a>
+                <a href="pages/ar/courses.html?cat=neurology" class="specialty-card">
+                    <div class="specialty-icon"><i class="fas fa-brain"></i></div>
+                    <h3>طب الأعصاب</h3>
+                    <span>4 دورات</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>الدورات المميزة</h2>
+                <a href="pages/ar/courses.html" class="view-all">عرض الكل <i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400" alt="Course">
+                        <span class="course-badge">الأكثر مبيعاً</span>
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">أمراض القلب</div>
+                        <h3>تخطيط القلب الكهربائي - من المبتدئ للمحترف</h3>
+                        <div class="course-instructor">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=50" alt="Instructor">
+                            <span>د. أحمد محمود</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 12 ساعة</span>
+                            <span><i class="fas fa-play-circle"></i> 45 درس</span>
+                            <span><i class="fas fa-signal"></i> متوسط</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="current-price">$35</span>
+                                <span class="old-price">$65</span>
+                            </div>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                                <span class="rating-count">(128)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=400" alt="Course">
+                        <span class="course-badge new">جديد</span>
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">الجراحة</div>
+                        <h3>أساسيات الجراحة العامة والتقنيات الحديثة</h3>
+                        <div class="course-instructor">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=50" alt="Instructor">
+                            <span>د. سارة أحمد</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 20 ساعة</span>
+                            <span><i class="fas fa-play-circle"></i> 60 درس</span>
+                            <span><i class="fas fa-signal"></i> متقدم</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="current-price">$65</span>
+                            </div>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                                <span class="rating-count">(89)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=400" alt="Course">
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">طب الأطفال</div>
+                        <h3>طب الأطفال السريري - التشخيص والعلاج</h3>
+                        <div class="course-instructor">
+                            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=50" alt="Instructor">
+                            <span>د. ليلى حسن</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 15 ساعة</span>
+                            <span><i class="fas fa-play-circle"></i> 52 درس</span>
+                            <span><i class="fas fa-signal"></i> مبتدئ</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="current-price">$45</span>
+                                <span class="old-price">$75</span>
+                            </div>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                                <span class="rating-count">(156)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section class="subscription-section">
+        <div class="container">
+            <div class="subscription-content">
+                <h2>اشترك واحصل على وصول غير محدود</h2>
+                <p>اشترك في خطتنا الشهرية أو السنوية واحصل على وصول لجميع الدورات</p>
+                <div class="subscription-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>وصول لجميع الدورات</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>شهادات إتمام</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>تحديثات مستمرة</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>دعم فني متواصل</span>
+                    </div>
+                </div>
+                <div class="subscription-pricing">
+                    <div class="price-card">
+                        <h3>شهري</h3>
+                        <div class="price">$19<span>/شهر</span></div>
+                        <a href="pages/ar/pricing.html" class="btn btn-outline">اشترك الآن</a>
+                    </div>
+                    <div class="price-card featured">
+                        <span class="popular-badge">الأكثر توفيراً</span>
+                        <h3>سنوي</h3>
+                        <div class="price">$149<span>/سنة</span></div>
+                        <p class="savings">وفر 35%</p>
+                        <a href="pages/ar/pricing.html" class="btn btn-primary">اشترك الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>لماذا MedLearn؟</h2>
+                <p>نقدم لك تجربة تعليمية طبية فريدة</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-user-md"></i></div>
+                    <h3>محاضرون خبراء</h3>
+                    <p>أطباء ومختصون بخبرة عالية في مجالاتهم</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>شهادات معتمدة</h3>
+                    <p>احصل على شهادة إتمام لكل دورة تنهيها</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>تعلم في أي وقت</h3>
+                    <p>ادخل للمحتوى من أي جهاز وفي أي وقت</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h3>محتوى محدث</h3>
+                    <p>دورات محدثة بأحدث المعلومات الطبية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="instructors-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>المحاضرون المميزون</h2>
+                <a href="pages/ar/instructors.html" class="view-all">عرض الكل <i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="instructors-grid">
+                <div class="instructor-card">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200" alt="Instructor">
+                    <h3>د. أحمد محمود</h3>
+                    <p>استشاري أمراض القلب</p>
+                    <div class="instructor-stats">
+                        <span><i class="fas fa-book"></i> 8 دورات</span>
+                        <span><i class="fas fa-users"></i> 1.2k طالب</span>
+                    </div>
+                </div>
+                <div class="instructor-card">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200" alt="Instructor">
+                    <h3>د. ليلى حسن</h3>
+                    <p>أخصائية طب الأطفال</p>
+                    <div class="instructor-stats">
+                        <span><i class="fas fa-book"></i> 5 دورات</span>
+                        <span><i class="fas fa-users"></i> 890 طالب</span>
+                    </div>
+                </div>
+                <div class="instructor-card">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=200" alt="Instructor">
+                    <h3>د. سارة أحمد</h3>
+                    <p>استشارية جراحة عامة</p>
+                    <div class="instructor-stats">
+                        <span><i class="fas fa-book"></i> 6 دورات</span>
+                        <span><i class="fas fa-users"></i> 1.5k طالب</span>
+                    </div>
+                </div>
+                <div class="instructor-card">
+                    <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=200" alt="Instructor">
+                    <h3>د. محمد علي</h3>
+                    <p>أخصائي طب الطوارئ</p>
+                    <div class="instructor-stats">
+                        <span><i class="fas fa-book"></i> 4 دورات</span>
+                        <span><i class="fas fa-users"></i> 670 طالب</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>آراء الأطباء</h2>
+                <p>ماذا يقول الأطباء عن تجربتهم معنا</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"منصة رائعة ساعدتني في تطوير مهاراتي في تخطيط القلب. المحتوى عالي الجودة والمحاضرون محترفون."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=60" alt="Doctor">
+                        <div>
+                            <h4>د. نور الدين</h4>
+                            <span>طبيب باطنية - عمّان</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"الاشتراك السنوي كان أفضل استثمار في مسيرتي المهنية. دورات متنوعة ومحتوى محدث باستمرار."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=60" alt="Doctor">
+                        <div>
+                            <h4>د. رنا خالد</h4>
+                            <span>طبيبة أطفال - رام الله</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>ابدأ رحلتك التعليمية اليوم</h2>
+            <p>انضم لآلاف الأطباء الذين يطورون مهاراتهم معنا</p>
+            <a href="pages/ar/register.html" class="btn btn-primary btn-lg">سجل مجاناً الآن</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
+                        <span class="logo-text">Med<span class="highlight">Learn</span></span>
+                    </a>
+                    <p>منصة تعليمية طبية متكاملة للأطباء والمختصين في فلسطين والأردن</p>
+                    <p class="tagline">تعلم. تطور. تميز.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="pages/ar/courses.html">الدورات</a></li>
+                        <li><a href="pages/ar/instructors.html">المحاضرون</a></li>
+                        <li><a href="pages/ar/pricing.html">الاشتراكات</a></li>
+                        <li><a href="pages/ar/about.html">من نحن</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>الدعم</h4>
+                    <ul>
+                        <li><a href="pages/ar/contact.html">تواصل معنا</a></li>
+                        <li><a href="pages/ar/faq.html">الأسئلة الشائعة</a></li>
+                        <li><a href="pages/ar/terms.html">الشروط والأحكام</a></li>
+                        <li><a href="pages/ar/privacy.html">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>تواصل معنا</h4>
+                    <p><i class="fas fa-envelope"></i> info@medlearn.com</p>
+                    <p><i class="fas fa-phone"></i> +970 599 123 456</p>
+                    <p><i class="fas fa-map-marker-alt"></i> فلسطين - رام الله</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedLearn. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
